@@ -15,3 +15,8 @@
 
 //Lecture: variables 2
 
+var name = "Nico";
+var age = 100;
+
+console.log(name + age); //type coercion // returns Nico100
+
