@@ -226,4 +226,31 @@
 //     console.log("john is not a teacher");
 // }
 
+//Lecture:Objects
 
+var john = {
+    name: "john",
+    lastName: "smith",
+    yearOfBirth: 1990,
+    job: "teacher",
+    isMarried: false
+};
+
+console.log(john.lastName);
+console.log(john["lastName"]);
+
+var xyz = "job";
+console.log(john[xyz]);
+
+john.lastName = "miller";
+john["job"] = "programmer";
+
+console.log(john);
+var jane = new Object();
+jane.name = "jane";
+jane.lastName = "smith";
+jane["yearOfBirth"]= 1969;
+jane["job"]= "retired";
+jane["isMarried"]= true;
+
+console.log(jane);
