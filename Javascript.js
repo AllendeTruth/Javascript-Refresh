@@ -43,17 +43,20 @@
 
 
 //Lecture: Operators
-var now = 2018
-var birthYear = now-100; //1918
+// var now = 2018
+// var birthYear = now-100; //1918
 
 
 
 
-console.log(birthYear);
-//operator precedence * is higher priortity than -
-var ageMark = 30;
-var ageJohn = 30; 
+// console.log(birthYear);
+// //operator precedence * is higher priortity than -
+// var ageMark = 30;
+// var ageJohn = 30; 
 
-ageJohn = ageMark =(3+5)*4-6;
+// ageJohn = ageMark =(3+5)*4-6;
+// ageJohn++;
 
-console.log(ageJohn);
+// ageMark *=2
+// console.log(ageJohn);
+// console.log(`${ageMark} ageMark`);
