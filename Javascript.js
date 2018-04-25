@@ -60,3 +60,64 @@
 // ageMark *=2
 // console.log(ageJohn);
 // console.log(`${ageMark} ageMark`);
+
+
+
+//Lecture: if/else statments
+
+// var name = "Nico";
+// console.log(name);
+
+// // var lastName = "Allende";
+// // console.log(lastName);
+
+// var age = 100;
+// var isMarried = false;
+
+// if (isMarried){
+//     console.log(name + "is married!")
+// } else {
+//     console.log("hopefully " + name + " will get married soon!")
+// }
+
+// // == does type coercion === does not use ===
+
+// if(23=="23"){
+//     console.log("print");
+// }
+
+
+// //Lectuer : boolean logic and switch
+
+// var age = 19;
+
+// if(age<20){
+//     console.log("J is teenager")
+// } else if(age>=20 && age<30){
+//     console.log("j is a young man");
+// } else {
+//     console.log("j is a man")
+// };
+
+
+// //Case switch
+
+// var job = "teacher";
+
+// job = prompt("What does John do?")
+
+// switch (job){
+//     case "teacher":
+//         console.log("John teaches kids");
+//         break;
+//     case "driver":
+//         console.log("John drives a cab in Lisbon.");
+//         break;
+//     case "cop":
+//         console.log("John helps fight crime.");
+//         break;
+
+//     default: 
+//         console.log("John does something else.");
+        
+// }
