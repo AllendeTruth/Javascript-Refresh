@@ -22,3 +22,10 @@ console.log(name + age); //type coercion // returns Nico100
 
 console.log(age + age); // 200
 
+var job, isMarried;
+console.log(job); //undefined
+
+job = "teacher";
+isMarried = false;
+
+console.log(name + " is " + age + " years old and a " + job + ". Is he married? " + isMarried +".");
