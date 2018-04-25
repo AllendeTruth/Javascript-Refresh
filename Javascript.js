@@ -78,80 +78,113 @@
 //     console.log(name + "is married!")
 // } else {
 //     console.log("hopefully " + name + " will get married soon!")
-// }
+// // }
 
-// // == does type coercion === does not use ===
+// // // == does type coercion === does not use ===
 
-// if(23=="23"){
-//     console.log("print");
-// }
-
-
-// //Lectuer : boolean logic and switch
-
-// var age = 19;
-
-// if(age<20){
-//     console.log("J is teenager")
-// } else if(age>=20 && age<30){
-//     console.log("j is a young man");
-// } else {
-//     console.log("j is a man")
-// };
+// // if(23=="23"){
+// //     console.log("print");
+// // }
 
 
-// //Case switch
+// // //Lectuer : boolean logic and switch
 
-// var job = "teacher";
+// // var age = 19;
 
-// job = prompt("What does John do?")
+// // if(age<20){
+// //     console.log("J is teenager")
+// // } else if(age>=20 && age<30){
+// //     console.log("j is a young man");
+// // } else {
+// //     console.log("j is a man")
+// // };
 
-// switch (job){
-//     case "teacher":
-//         console.log("John teaches kids");
-//         break;
-//     case "driver":
-//         console.log("John drives a cab in Lisbon.");
-//         break;
-//     case "cop":
-//         console.log("John helps fight crime.");
-//         break;
 
-//     default: 
-//         console.log("John does something else.");
+// // //Case switch
+
+// // var job = "teacher";
+
+// // job = prompt("What does John do?")
+
+// // switch (job){
+// //     case "teacher":
+// //         console.log("John teaches kids");
+// //         break;
+// //     case "driver":
+// //         console.log("John drives a cab in Lisbon.");
+// //         break;
+// //     case "cop":
+// //         console.log("John helps fight crime.");
+// //         break;
+
+// //     default: 
+// //         console.log("John does something else.");
         
+// // }
+
+
+
+// var heightJ = 100;
+// var heightM = 110;
+// var ageJ = 10;
+// var ageM = 9;
+// var heightD = 110;
+// var ageD = 10;
+
+// heightJ = prompt("What is John's Height?");
+// ageJ = prompt("What is John's age?");
+// heightM = prompt("What is Mike's Height?");
+// ageM = prompt("What is Mike's age?");
+// heightD = prompt("What is David's Height?");
+// ageD = prompt("What is David's age?");
+
+// var scoreJ = heightJ +(ageJ*3);
+// var scoreM = heightM +(ageM*3);
+// var scoreD = heightD +(ageD*3);
+
+// if(scoreJ === scoreM || scoreM === scoreD || scoreJ === scoreD){
+//     console.log("It's a tie!");
+// } else if(scoreJ > scoreM && scoreD) {
+//     console.log("John is the winner!");
+// } else if (scoreM > scoreJ && scoreD) {
+//     console.log("Mike is the winner!");
+// }else {
+//     console.log("David is the winner!");
 // }
 
 
+// // console.log(scoreJ +" is John's Score");
+// // console.log(scoreM +" is Mike's Score");
 
-var heightJ = 100;
-var heightM = 110;
-var ageJ = 10;
-var ageM = 9;
-var heightD = 110;
-var ageD = 10;
 
-heightJ = prompt("What is John's Height?");
-ageJ = prompt("What is John's age?");
-heightM = prompt("What is Mike's Height?");
-ageM = prompt("What is Mike's age?");
-heightD = prompt("What is David's Height?");
-ageD = prompt("What is David's age?");
 
-var scoreJ = heightJ +(ageJ*3);
-var scoreM = heightM +(ageM*3);
-var scoreD = heightD +(ageD*3);
 
-if(scoreJ === scoreM || scoreM === scoreD || scoreJ === scoreD){
-    console.log("It's a tie!");
-} else if(scoreJ > scoreM && scoreD) {
-    console.log("John is the winner!");
-} else if (scoreM > scoreJ && scoreD) {
-    console.log("Mike is the winner!");
-}else {
-    console.log("David is the winner!");
+//lecture: functions
+// containers that hold code
+
+function calculateAge(yearOfBirth){
+    var age = 2018 - yearOfBirth;
+    return age;
 }
 
+var ageJohn = calculateAge(1990);
+var ageMike = calculateAge(1957);
+var ageDeb = calculateAge(1961);
+console.log(ageJohn);
+console.log(ageMike);
+console.log(ageDeb);
 
-// console.log(scoreJ +" is John's Score");
-// console.log(scoreM +" is Mike's Score");
+function yearsUntilRetirement(name, yearOfBirth){
+    var age = calculateAge(yearOfBirth);
+    var retirement = 65-age;
+    if(retirement>0){
+        console.log(name + " retires in " + retirement + " years.");
+    } else {
+        console.log(name + " has already retired")
+    }
+    
+}
+
+yearsUntilRetirement("John", 1990);
+yearsUntilRetirement("Jane", 1950);
+yearsUntilRetirement("Mary", 1976);
