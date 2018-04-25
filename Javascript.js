@@ -162,29 +162,68 @@
 //lecture: functions
 // containers that hold code
 
-function calculateAge(yearOfBirth){
-    var age = 2018 - yearOfBirth;
-    return age;
-}
+// function calculateAge(yearOfBirth){
+//     var age = 2018 - yearOfBirth;
+//     return age;
+// }
 
-var ageJohn = calculateAge(1990);
-var ageMike = calculateAge(1957);
-var ageDeb = calculateAge(1961);
-console.log(ageJohn);
-console.log(ageMike);
-console.log(ageDeb);
+// var ageJohn = calculateAge(1990);
+// var ageMike = calculateAge(1957);
+// var ageDeb = calculateAge(1961);
+// console.log(ageJohn);
+// console.log(ageMike);
+// console.log(ageDeb);
 
-function yearsUntilRetirement(name, yearOfBirth){
-    var age = calculateAge(yearOfBirth);
-    var retirement = 65-age;
-    if(retirement>0){
-        console.log(name + " retires in " + retirement + " years.");
-    } else {
-        console.log(name + " has already retired")
-    }
+// function yearsUntilRetirement(name, yearOfBirth){
+//     var age = calculateAge(yearOfBirth);
+//     var retirement = 65-age;
+//     if(retirement>0){
+//         console.log(name + " retires in " + retirement + " years.");
+//     } else {
+//         console.log(name + " has already retired")
+//     }
     
-}
+// }
 
-yearsUntilRetirement("John", 1990);
-yearsUntilRetirement("Jane", 1950);
-yearsUntilRetirement("Mary", 1976);
+// yearsUntilRetirement("John", 1990);
+// yearsUntilRetirement("Jane", 1950);
+// yearsUntilRetirement("Mary", 1976);
+
+
+// // Lecture: Statements and expressions
+
+// var someFun = function(par){
+//     //code
+// }
+// //expressions
+
+// 3+4;
+
+
+//Lecture: arrays
+
+// var names = ["john","jane","mark"];
+
+// var years = new Array(1990, 1969, 1948);
+
+// console.log(names[2]);
+
+// names[1] = "ben";
+
+// console.log(names);
+
+// var john = ["John", "smith", 1990, "teacher", false];
+
+// john.push("blue");
+// john.unshift("mr.");
+// john.pop();
+// john.shift();
+
+// console.log(john);
+
+// if(
+// john.indexOf("teacher")===-1){
+//     console.log("john is not a teacher");
+// }
+
+
