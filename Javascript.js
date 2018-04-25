@@ -121,3 +121,37 @@
 //         console.log("John does something else.");
         
 // }
+
+
+
+var heightJ = 100;
+var heightM = 110;
+var ageJ = 10;
+var ageM = 9;
+var heightD = 110;
+var ageD = 10;
+
+heightJ = prompt("What is John's Height?");
+ageJ = prompt("What is John's age?");
+heightM = prompt("What is Mike's Height?");
+ageM = prompt("What is Mike's age?");
+heightD = prompt("What is David's Height?");
+ageD = prompt("What is David's age?");
+
+var scoreJ = heightJ +(ageJ*3);
+var scoreM = heightM +(ageM*3);
+var scoreD = heightD +(ageD*3);
+
+if(scoreJ === scoreM || scoreM === scoreD || scoreJ === scoreD){
+    console.log("It's a tie!");
+} else if(scoreJ > scoreM && scoreD) {
+    console.log("John is the winner!");
+} else if (scoreM > scoreJ && scoreD) {
+    console.log("Mike is the winner!");
+}else {
+    console.log("David is the winner!");
+}
+
+
+// console.log(scoreJ +" is John's Score");
+// console.log(scoreM +" is Mike's Score");
