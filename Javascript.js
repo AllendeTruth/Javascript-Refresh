@@ -20,3 +20,5 @@ var age = 100;
 
 console.log(name + age); //type coercion // returns Nico100
 
+console.log(age + age); // 200
+
