@@ -29,7 +29,7 @@ job = "teacher";
 isMarried = false;
 
 console.log(name + " is " + age + " years old and a " + job + ". Is he married? " + isMarried +".");
-
+//variable mutation
 age = "thirty six";
 job = "hustler";
 
