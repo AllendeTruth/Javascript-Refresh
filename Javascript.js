@@ -226,31 +226,84 @@
 //     console.log("john is not a teacher");
 // }
 
-//Lecture:Objects
+//Lecture:Objects and methods
 
+// var john = {
+//     name: "john",
+//     lastName: "smith",
+//     yearOfBirth: 1990,
+//     job: "teacher",
+//     isMarried: false
+// };
+
+// console.log(john.lastName);
+// console.log(john["lastName"]);
+
+// var xyz = "job";
+// console.log(john[xyz]);
+
+// john.lastName = "miller";
+// john["job"] = "programmer";
+
+// console.log(john);
+// var jane = new Object();
+// jane.name = "jane";
+// jane.lastName = "smith";
+// jane["yearOfBirth"]= 1969;
+// jane["job"]= "retired";
+// jane["isMarried"]= true;
+
+// console.log(jane);
+
+///////////////////////////////////////////////////////////
+//v1.0
+// var john = {
+//     name: "john",
+//     lastName: "smith",
+//     yearOfBirth: 1990,
+//     job: "teacher",
+//     isMarried: false,
+//     family: ["Jane", "mark", "bob"],
+//     calculateAge: function(){
+//        return 2018-this.yearOfBirth;
+//     }
+// };
+
+// console.log(john.calculateAge());
+
+// var age = john.calculateAge();
+// john.age = age;
+
+// console.log(john);
+
+
+//v2.0
 var john = {
     name: "john",
     lastName: "smith",
     yearOfBirth: 1990,
     job: "teacher",
-    isMarried: false
+    isMarried: false,
+    family: ["Jane", "mark", "bob"],
+    calculateAge: function(){
+       this.age = 2018 - this.yearOfBirth
+    }
 };
 
-console.log(john.lastName);
-console.log(john["lastName"]);
-
-var xyz = "job";
-console.log(john[xyz]);
-
-john.lastName = "miller";
-john["job"] = "programmer";
-
+john.calculateAge();
 console.log(john);
-var jane = new Object();
-jane.name = "jane";
-jane.lastName = "smith";
-jane["yearOfBirth"]= 1969;
-jane["job"]= "retired";
-jane["isMarried"]= true;
 
-console.log(jane);
+var mike = {
+    name: "mike",
+    lastName: "smith",
+    yearOfBirth: 1990,
+    job: "teacher",
+    isMarried: false,
+    family: ["Jane", "mark", "bob"],
+    calculateAge: function(){
+       this.age = 2018 - this.yearOfBirth
+    }
+};
+
+john.calculateAge();
+console.log(mike);
