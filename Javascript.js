@@ -278,32 +278,113 @@
 
 
 //v2.0
-var john = {
-    name: "john",
-    lastName: "smith",
-    yearOfBirth: 1990,
-    job: "teacher",
-    isMarried: false,
-    family: ["Jane", "mark", "bob"],
-    calculateAge: function(){
-       this.age = 2018 - this.yearOfBirth
+// var john = {
+//     name: "john",
+//     lastName: "smith",
+//     yearOfBirth: 1990,
+//     job: "teacher",
+//     isMarried: false,
+//     family: ["Jane", "mark", "bob"],
+//     calculateAge: function(){
+//        this.age = 2018 - this.yearOfBirth
+//     }
+// };
+
+// john.calculateAge();
+// console.log(john);
+
+// var mike = {
+//     name: "mike",
+//     lastName: "smith",
+//     yearOfBirth: 1990,
+//     job: "teacher",
+//     isMarried: false,
+//     family: ["Jane", "mark", "bob"],
+//     calculateAge: function(){
+//        this.age = 2018 - this.yearOfBirth
+//     }
+// };
+
+// john.calculateAge();
+// console.log(mike);
+
+
+
+///////////////////////////////////////////
+
+//Lecture: loops
+
+
+// for(var i = 0; i<10; i++){
+//     console.log(i);
+// }
+
+// 0, true, print 0, update i to 1, ect.
+
+
+var names = ["john", "jane", "mary", "bob", "rod", "tevin"];
+
+
+//for loops
+// for (var i = 0; i<names.length; i++){
+//     console.log(names[i]);
+// }
+
+// for (var i = names.length-1; i>=0; i--){
+//     console.log(names[i]);
+// }
+
+//while loops
+// var i =0;
+// while(i<names.length){
+//     console.log(names[i]);
+//     i++;
+// }
+
+// for(var i = 1; i<6; i++){
+//     console.log(i);
+
+//     if(i ===3)
+//     break;
+// }
+
+// for(var i = 1; i<6; i++){
+//     if(i ===3){
+//     continue;
+// }
+//     console.log(i);
+// }
+
+
+////////////////coding challenge/////////////////
+
+//array with years of birth
+var yearsOfBirth = [1999, 2011, 1992];
+var ages = [];
+var bouncer = [];
+
+
+//empty array
+
+//use a loop to fill the array with the ages of the people
+for(var i = 0; i< yearsOfBirth.length; i++){
+    ages[i]= 2018 - yearsOfBirth[i]
+    // arr.push(age);
+}
+
+for(i = 0; i<ages.length; i++){
+    if(ages[i]<18){
+        console.log("Person "+ i+ " is" + ages[i]+ " years old and is not full age");
+        bouncer.push(false);
+    }else{
+        console.log("Person "+ i+ " is" + ages[i]+ " years old and is full age")
+        bouncer.push(true);
     }
-};
+    
+}
+console.log(bouncer);
+// console.log(arr);
 
-john.calculateAge();
-console.log(john);
 
-var mike = {
-    name: "mike",
-    lastName: "smith",
-    yearOfBirth: 1990,
-    job: "teacher",
-    isMarried: false,
-    family: ["Jane", "mark", "bob"],
-    calculateAge: function(){
-       this.age = 2018 - this.yearOfBirth
-    }
-};
 
-john.calculateAge();
-console.log(mike);
+//use another loop to log into the consol whether each person is of full age (18 or older) as well as their age
